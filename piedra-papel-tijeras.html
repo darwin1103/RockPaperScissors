@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href=" https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mobile.css" media="(max-width: 768px)">
+    <script src="./js/code3.js"></script>
+    <title>Piedra, Papel o Tijeras</title>
+</head>
+<body>
+    <main>
+        <section class="tittle-section">
+            <h1>Rock - Paper - Scissors</h1>
+        </section>
+        <section class="options-section">
+            <img id="rock-button" src="./assets/images/icon-piedra.png" alt="" class="option-item">
+            <img id="paper-button" src="./assets/images/icon-papel.png" alt="" class="option-item">
+            <img id="scissors-button" src="./assets/images/icon-tijera.png" alt="" class="option-item">
+        </section>
+        <section class="card-section">
+            <div class="card-container">
+                <img id="player-card" src="./assets/images/default.png" alt="" class="card-item">
+            </div>
+            <div class="result-text-container">
+                <h2 id="result-text" class="result-text__item">Play!</h2>
+            </div>
+            <div id="pc-card-cont" class="card-container">
+                <img id="pc-card" src="./assets/images/default.png" alt="" class="card-item">
+                <img id="pc-card1" src="./assets/images/piedra.png" alt="" class="card-item">
+                <img id="pc-card2" src="./assets/images/papel.png" alt="" class="card-item">
+                <img id="pc-card3" src="./assets/images/tijera.png" alt="" class="card-item">
+            </div>
+        </section>
+        <section class="marker-section">
+            <div class="marker-container">
+                <div class="marker-item">
+                    <p>Wins</p>
+                    <span id="wins-marker">0</span>
+                </div>
+                <div class="marker-item">
+                    <p>Losses</p>
+                    <span id="losses-marker">0</span>
+                </div>
+                <div class="marker-item">
+                    <p>Ties</p>
+                    <span id="ties-marker">0</span>
+                </div>
+            </div>
+            <button id="button-refresh" onclick="location.reload()">Play Again</button>
+        </section>
+    </main>
+</body>
+</html>
